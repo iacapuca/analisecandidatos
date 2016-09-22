@@ -1,17 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>p
-    <meta charset="UTF-8">
-    <title>Teste</title>
-    <link rel="stylesheet" type="text/css" href="css/bulma.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
-    <div class="tile container">
-      <canvas id="lineChart">
-      </canvas>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<html>
+    <head>
+        <title>Analise Candidatos</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bulma.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+
+    <body>
+        <div class="tile container">
+        <canvas id="lineChart">
+
+        </canvas>
+        </div>
+       
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item is-brand" href="#">
+          <img src="#" alt="LOGO">
+        </a>
+      </div>
+      <div class="nav-center">
+        <a class="nav-item">
+          <p class="control has-addons">
+            <input class="input" type="text" placeholder="Pesquise um candidato">
+            <p class="control">
+              <a class="button is-info" id="btn_pesquisar">
+                Search
+              </a>
+            </p>
+          </p>
+        </a>
+      </div>
+
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+<div class="nav-right nav-menu">
+    <a class="nav-item" href="index.html">
+      Home
+    </a>
+    <a class="nav-item" href="sobre.html">
+      About
+    </a>
+    <span class="nav-item">
+      <a class="button" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fgoogle.com&t=AnaliseCandidatos" target="_blank"">
+        <span class="icon">
+          <i class="fa fa-facebook"></i>
+        </span>
+        <span>Share</span>
+      </a>
+    <span class="nav-item">
+      <a class="button" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgoogle.com&hashtags=FalaMuito%20%23Propostas&text=Saiba%20as%20palavras%20mais%20faladas%20pelos%20candidatos%20%C3%A0%20Prefeitura%20do%20Recife%2E">
+        <span class="icon">
+          <i class="fa fa-twitter"></i>
+          </span>
+          <span>Tweet</span>
+      </a>
+      <a class="button" href="https://github.com/iacapuca/analisecandidatos">
+        <span class="icon">
+          <i class="fa fa-github"></i>
+        </span>
+      </a>
+  </div>
+  </nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
+<script type="text/javascript">
+<script src="js/main.js"></script>
+</body>
 </html>
